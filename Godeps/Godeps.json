@@ -1,0 +1,5 @@
+{
+	"ImportPath": "github.com/daolicloud/daolictl",
+	"GoVersion": "go1.5",
+	"Deps": []
+}
