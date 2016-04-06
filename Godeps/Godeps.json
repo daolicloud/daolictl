@@ -1,5 +1,38 @@
 {
 	"ImportPath": "github.com/daolicloud/daolictl",
 	"GoVersion": "go1.5",
-	"Deps": []
+	"Deps": [
+		{
+			"ImportPath": "github.com/Microsoft/go-winio",
+			"Comment": "v0.3.0",
+			"Rev": "9e60d867bdf06f14e699afbba4cb21717cc0ea6e"
+		},
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v0.9.0-15-g219c8cb",
+			"Rev": "219c8cb75c258c552e999735be6df753ffc7afdc"
+		},
+		{
+			"ImportPath": "github.com/docker/go-connections/sockets",
+			"Comment": "v0.2.0-2-gf549a93",
+			"Rev": "f549a9393d05688dff0992ef3efd8bbe6c628aeb"
+		},
+		{
+			"ImportPath": "github.com/opencontainers/runc/libcontainer/user",
+			"Comment": "v0.0.9-115-g3f4f442",
+			"Rev": "3f4f4420fded8d19cf29a1b6a631b7e31f7f9c68"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "62685c2d7ca23c807425dca88b11a3e2323dab41"
+		},
+		{
+			"ImportPath": "golang.org/x/net/proxy",
+			"Rev": "62685c2d7ca23c807425dca88b11a3e2323dab41"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "042a8f53ce82bbe081222da955159491e32146a0"
+		}
+	]
 }
