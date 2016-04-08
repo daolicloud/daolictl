@@ -20,7 +20,7 @@ func (cli *DaoliCli) CmdPolicy(args ...string) error {
 //func (cli *DaoliCli) CmdPolicyList(args ...string) error {
 //	cmd := Cli.Subcmd("policy list", nil, "Lists policies", true)
 //Usage: daolictl cutls
-func (cli *DaoliCli) CmdCutLs(args ...string) error {
+func (cli *DaoliCli) CmdCutls(args ...string) error {
 	cmd := Cli.Subcmd("cutls", nil, Cli.GlobalCommands["cutls"].Description, true)
 	if err := ParseFlags(cmd, args, true); err != nil {
 		return err
