@@ -146,6 +146,8 @@ func Subcmd(name string, synopses []string, description string, exitOnError bool
 		options := ""
 		if len(synopses) == 0 {
 			synopses = []string{""}
+		} else {
+			options = " [OPTIONS]"
 		}
 
 		// Allow for multiple command usage synopses.
@@ -163,7 +165,7 @@ func Subcmd(name string, synopses []string, description string, exitOnError bool
 			fmt.Fprintf(os.Stdout, "\n%sdaolictl %s%s%s", lead, name, options, synopsis)
 		}
 
-		fmt.Fprintf(os.Stdout, "\n\n%s\n", description)
+		fmt.Fprintf(os.Stdout, "\n\n%s\n\n", description)
 		flags.PrintDefaults()
 	}
 
