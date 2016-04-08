@@ -15,7 +15,7 @@ import (
 
 const (
 	DefaultVersion = "1.23"
-	DefaultHost    = "tcp://127.0.0.1:808"
+	DefaultHost    = "tcp://127.0.0.1:3380"
 )
 
 // DaoliCli represents the daolictl command line client.
