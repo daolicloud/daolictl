@@ -79,7 +79,7 @@ func (cli *DaoliCli) CmdFirewallShow(args ...string) error {
 
 // Usage: daolictl firewall create <NAME> --rule <GATEWAYPORT:SERVICEPORT> --container <CONTAINER>
 func (cli *DaoliCli) CmdFirewallCreate(args ...string) error {
-	cmd := Cli.Subcmd("firewall create", []string{"[OPTIONS] FIREWALL-NAME"},
+	cmd := Cli.Subcmd("firewall create", []string{"FIREWALL-NAME"},
 		"Creates a firewall rule with a given name", false)
 	rule := cmd.String("rule", "", "Add firewall mapping")
 	container := cmd.String("container", "", "Add firewall target")
