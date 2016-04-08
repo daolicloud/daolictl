@@ -88,7 +88,7 @@ func (cli *DaoliCli) CmdGroupCreate(args ...string) error {
 //
 // Usage: daolictl group delete <GROUP-NAME>
 func (cli *DaoliCli) CmdGroupDelete(args ...string) error {
-	cmd := Cli.Subcmd("group delete", []string{"Group [Group...]"}, "Deletes one or more groups", false)
+	cmd := Cli.Subcmd("group delete", []string{"GROUP [GROUP...]"}, "Deletes one or more groups", false)
 	if err := ParseFlags(cmd, args, true); err != nil {
 		return err
 	}

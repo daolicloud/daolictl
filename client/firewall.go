@@ -137,7 +137,7 @@ func (cli *DaoliCli) CmdFirewallCreate(args ...string) error {
 
 // Usage: daolictl firewall delete <FIREWALL-NAME>
 func (cli *DaoliCli) CmdFirewallDelete(args ...string) error {
-	cmd := Cli.Subcmd("firewall delete", []string{"FIREWALL-NAME"}, "Deletes one or more firewalls", false)
+	cmd := Cli.Subcmd("firewall delete", []string{"FIREWALL-NAME [FIREWALL-NAME...]"}, "Deletes one or more firewalls", false)
 	if err := ParseFlags(cmd, args, true); err != nil {
 		return err
 	}
