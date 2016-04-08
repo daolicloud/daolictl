@@ -16,9 +16,12 @@ func (cli *DaoliCli) CmdPolicy(args ...string) error {
 	return err
 }
 
-//Usage: daolictl policy create <PEER>
-func (cli *DaoliCli) CmdPolicyList(args ...string) error {
-	cmd := Cli.Subcmd("policy list", nil, "Lists policies", true)
+////Usage: daolictl policy list
+//func (cli *DaoliCli) CmdPolicyList(args ...string) error {
+//	cmd := Cli.Subcmd("policy list", nil, "Lists policies", true)
+//Usage: daolictl cutls
+func (cli *DaoliCli) CmdCutLs(args ...string) error {
+	cmd := Cli.Subcmd("cutls", nil, Cli.GlobalCommands["cutls"].Description, true)
 	if err := ParseFlags(cmd, args, true); err != nil {
 		return err
 	}
@@ -40,9 +43,12 @@ func (cli *DaoliCli) CmdPolicyList(args ...string) error {
 	return nil
 }
 
-// Usage: daolictl policy create <CONTAINER:CONTAINER>
-func (cli *DaoliCli) CmdPolicyCreate(args ...string) error {
-	cmd := Cli.Subcmd("policy create", []string{"CONTAINER:CONTAINER"}, "Creates a policy with container peer", false)
+//// Usage: daolictl policy create <CONTAINER:CONTAINER>
+//func (cli *DaoliCli) CmdPolicyCreate(args ...string) error {
+//	cmd := Cli.Subcmd("policy create", []string{"CONTAINER:CONTAINER"}, "Creates a policy with container peer", false)
+// Usage: daolictl cut <CONTAINER:CONTAINER>
+func (cli *DaoliCli) CmdCut(args ...string) error {
+	cmd := Cli.Subcmd("cut", []string{"CONTAINER:CONTAINER"}, Cli.GlobalCommands["cut"].Description, true)
 	if err := ParseFlags(cmd, args, true); err != nil {
 		return err
 	}
@@ -60,9 +66,12 @@ func (cli *DaoliCli) CmdPolicyCreate(args ...string) error {
 	return nil
 }
 
-// Usage: daolictl policy delete <CONTAINER:CONTAINER>
-func (cli *DaoliCli) CmdPolicyDelete(args ...string) error {
-	cmd := Cli.Subcmd("policy delete", []string{"CONTAINER:CONTAINER"}, "Delete a policy with container peer", false)
+//// Usage: daolictl policy delete <CONTAINER:CONTAINER>
+//func (cli *DaoliCli) CmdPolicyDelete(args ...string) error {
+//	cmd := Cli.Subcmd("policy delete", []string{"CONTAINER:CONTAINER"}, "Delete a policy with container peer", false)
+// Usage: daolictl uncut <CONTAINER:CONTAINER>
+func (cli *DaoliCli) CmdUncut(args ...string) error {
+	cmd := Cli.Subcmd("uncut", []string{"CONTAINER:CONTAINER"}, Cli.GlobalCommands["uncut"].Description, true)
 	if err := ParseFlags(cmd, args, true); err != nil {
 		return err
 	}

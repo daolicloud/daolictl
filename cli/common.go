@@ -34,7 +34,10 @@ var globalCommands = []Command{
 	{"firewall", "Firewall management"},
 	{"group", "Group management"},
 	{"member", "Group member management"},
-	{"policy", "Policy management"},
+	//{"policy", "Policy management"},
+	{"cut", "Do container isolation"},
+	{"cutls", "List all cuts"},
+	{"uncut", "Undo container isolation"},
 	{"version", "Show the daolinet version information"},
 }
 
